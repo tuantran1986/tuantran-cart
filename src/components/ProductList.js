@@ -5,19 +5,19 @@ import { useSelector } from 'react-redux';
 const ProductList = () => {
 
     // 
-    const productList = useSelector(state=>state.productReducer);
+    const productList = useSelector(state => state.productReducer);
 
     // render
     return (
         <>
             <section className="section">
-                <h3 className="text-center">TUANTRAN CART -REACTHOOK-REDUX- (NghiepUIT)</h3>
+                <h3 className="text-center"> <b><u> TUANTRAN CART -REACTHOOK-REDUX- (NghiepUIT) </u></b></h3>
                 <h5 className="text-center">Danh Sách Sản Phẩm</h5>
-                <br/>
+                <br />
                 <div className="row">
-          
+
                     {
-                        productList.map((product,index)=>(<ProductItem key={index} product={product} />))
+                        productList.map((product, index) => (<ProductItem key={index} product={product} />))
                     }
 
                 </div>
